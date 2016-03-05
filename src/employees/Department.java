@@ -4,6 +4,8 @@
  */
 package employees;
 
+import employees.generico.Employee;
+
 /**
  *
  * @author Humberto
@@ -12,19 +14,9 @@ public class Department {
 
     private String name;
     private Employee manager;
-    private Location location;
 
-    public Department(String name, Location location) {
+    public Department(String name) {
         this.name = name;
-        this.location = location;
-    }
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
     }
 
     public Employee getManager() {

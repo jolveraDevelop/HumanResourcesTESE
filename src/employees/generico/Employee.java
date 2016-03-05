@@ -1,5 +1,7 @@
-package employees;
+package employees.generico;
 
+import employees.Department;
+import employees.Job;
 import java.util.Date;
 
 /*
@@ -23,6 +25,17 @@ public class Employee {
     private double salary;
     private Department department;
 
+    public Employee() {
+    }
+
+    public Employee(String firstName, String lastName, Department department) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.department = department;
+    }
+    
+    
+
     public Employee(String firstName, String lastName, String email, String phoneNumber, Date hireDate, Job job, Department department) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -33,35 +46,35 @@ public class Employee {
         this.department = department;
     }
 
-    public int getId() {
+    protected int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    protected void setId(int id) {
         this.id = id;
     }
 
-    public String getFirstName() {
+    protected String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    protected void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    protected String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    protected void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    protected int getAge() {
         return age;
     }
 
-    public boolean setAge(int age) {
+    protected boolean setAge(int age) {
         if (age >= 18) {
             this.age = age;
             return true;
@@ -70,23 +83,23 @@ public class Employee {
         }
     }
 
-    public String getEmail() {
+    protected String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    protected void setEmail(String email) {
         this.email = email;
     }
 
-    public String getPhoneNumber() {
+    protected String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    protected void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public Date getHireDate() {
+    protected Date getHireDate() {
         return hireDate;
     }
 
@@ -121,5 +134,13 @@ public class Employee {
 
     public void setDepartment(Department department) {
         this.department = department;
+    }
+    
+    public String getDetails(){
+        return 
+                "Nombre: "+this.getFirstName()
+                    +" "+this.getLastName()+
+                "Departamento: "+
+                    this.getDepartment().getName();
     }
 }

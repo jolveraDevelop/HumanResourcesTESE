@@ -6,7 +6,7 @@ package test;
 
 import employees.Country;
 import employees.Department;
-import employees.Employee;
+import employees.generico.Employee;
 import employees.Job;
 import employees.Location;
 import java.util.Date;
