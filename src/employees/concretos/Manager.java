@@ -11,13 +11,8 @@ public class Manager extends Employee{
     private Secretary secretary;
     
     public String getDetails() {
-        return 
-                "Nombre: "+this.getFirstName()
-                    +" "+this.getLastName()+
-                "Departamento: "+
-                    this.getDepartment().getName()+
-                "Secretaria: "+
-                    this.getSecretary().getFirstName();
+        return super.getDetails()+" "+
+                getSecretary().getFirstName();
     }
 
     public Secretary getSecretary() {

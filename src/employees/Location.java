@@ -5,7 +5,7 @@
 package employees;
 
 /**
- *
+ * Clase que modela una direccion de algun lugar
  * @author Humberto
  */
 public class Location {

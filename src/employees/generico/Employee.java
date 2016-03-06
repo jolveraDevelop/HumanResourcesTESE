@@ -46,35 +46,35 @@ public class Employee {
         this.department = department;
     }
 
-    protected int getId() {
+    public int getId() {
         return id;
     }
 
-    protected void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    protected String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    protected void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    protected String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    protected void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    protected int getAge() {
+    public int getAge() {
         return age;
     }
 
-    protected boolean setAge(int age) {
+    public boolean setAge(int age) {
         if (age >= 18) {
             this.age = age;
             return true;
@@ -83,23 +83,23 @@ public class Employee {
         }
     }
 
-    protected String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    protected void setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    protected String getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    protected void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    protected Date getHireDate() {
+    public Date getHireDate() {
         return hireDate;
     }
 
@@ -140,7 +140,7 @@ public class Employee {
         return 
                 "Nombre: "+this.getFirstName()
                     +" "+this.getLastName()+
-                "Departamento: "+
+                " Departamento: "+
                     this.getDepartment().getName();
     }
 }
