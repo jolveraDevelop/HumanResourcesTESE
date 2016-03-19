@@ -25,16 +25,23 @@ public class Employee {
     private double salary;
     private Department department;
 
-    public Employee() {
-    }
+    
 
-    public Employee(String firstName, String lastName, Department department) {
+    public Employee(String firstName, String lastName, 
+                        Department department) {
+       // this();
         this.firstName = firstName;
         this.lastName = lastName;
-        this.department = department;
+        this.department = department; 
     }
     
+    public Employee(String firstName, String lastName, 
+                    Department department,String email) {
+        this(firstName,lastName,department);
+        this.email = email;
+    }
     
+        
 
     public Employee(String firstName, String lastName, String email, String phoneNumber, Date hireDate, Job job, Department department) {
         this.firstName = firstName;

@@ -11,7 +11,7 @@ public class Manager extends Employee{
     private Secretary secretary;
     
     public String getDetails() {
-        return super.getDetails()+" "+
+        return super.getDetails()+" Secretary Name:"+
                 getSecretary().getFirstName();
     }
 
@@ -19,7 +19,7 @@ public class Manager extends Employee{
         return secretary;
     }
 
-    public void setSecretary(Secretary secretary) {
-        this.secretary = secretary;
+    public void setSecretary(Employee secretary) {
+        this.secretary = (Secretary)secretary;
     }
 }
